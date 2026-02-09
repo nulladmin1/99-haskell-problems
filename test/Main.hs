@@ -21,14 +21,14 @@ p01 =
             (myLast ([] :: [Int])),
         TestCase $
           assertEqual
-            "myLast2 []"
+            "myLast' []"
             Nothing
-            (myLast2 ([] :: [Int])),
+            (myLast' ([] :: [Int])),
         TestCase $
           assertEqual
-            "myLast2 [1,2,3]"
+            "myLast' [1,2,3]"
             (Just 3)
-            (myLast ([1, 2, 3] :: [Int]))
+            (myLast' ([1, 2, 3] :: [Int]))
       ]
 
 tests :: Test

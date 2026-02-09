@@ -6,5 +6,5 @@ myLast :: [a] -> Maybe a
 myLast [] = Nothing
 myLast xs = Just $ last xs
 
-myLast2 :: [a] -> Maybe a
-myLast2 xs = fmap fst $ uncons $ reverse xs
+myLast' :: [a] -> Maybe a
+myLast' = fmap fst . uncons . reverse
