@@ -1,12 +1,13 @@
 {
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/nix:1": {
-      "multiUser": true,
-		  "version": "latest"
-    },
-    "ghcr.io/devcontainers-extra/features/haskell:2": {
-      "globalLibraries": "HUnit"
-    }
+	"ghcr.io/devcontainers/features/nix:1": {
+		"multiUser": true,
+			"version": "latest"
+	},
+	"ghcr.io/devcontainers-extra/features/haskell:2": {
+		"ghcVersion": "latest",
+		"globalLibraries": "HUnit"
+	}
   }
 }
