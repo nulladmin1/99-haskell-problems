@@ -67,7 +67,8 @@ test-suite ninety-nine-haskell-problems-test
         P03Test,
         P04Test,
         P05Test,
-        P06Test
+        P06Test,
+        P07Test
     
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -96,7 +97,8 @@ library
         P03,
         P04,
         P05,
-        P06
+        P06,
+        P07
     build-depends: base
     default-language: Haskell2010
     build-depends:    base ^>=4.20.2.0

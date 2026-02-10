@@ -6,11 +6,12 @@ import P03Test
 import P04Test
 import P05Test
 import P06Test
+import P07Test
 import qualified System.Exit as Exit
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03, p04, p05, p06]
+tests = TestList [p01, p02, p03, p04, p05, p06, p07]
 
 main :: IO ()
 main = do
