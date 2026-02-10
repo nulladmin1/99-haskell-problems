@@ -5,11 +5,12 @@ import P02
 import P03
 import P04
 import P05
+import P06
 import qualified System.Exit as Exit
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03, p04, p05]
+tests = TestList [p01, p02, p03, p04, p05, p06]
 
 main :: IO ()
 main = do
@@ -124,4 +125,26 @@ p05 =
           "rev [1, 2, 3]"
           ([3, 2, 1] :: [Int])
           (rev ([1, 2, 3] :: [Int]))
+    ]
+
+p06 :: Test
+p06 =
+  TestLabel
+  "P06"
+  $ TestList
+    [ TestCase $
+        assertEqual
+          "palindrome []"
+          (False)
+          (palindrome ([] :: [Int])),
+      TestCase $
+        assertEqual
+          "palindrome [1, 2, 3]"
+          (False)
+          (palindrome ([1, 2, 3] :: [Int])),
+      TestCase $
+        assertEqual
+          "palindrome \"madamimadam\""
+          (True)
+          (palindrome "madamimadam")
     ]

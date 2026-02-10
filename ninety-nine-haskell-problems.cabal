@@ -89,7 +89,8 @@ library
         P02,
         P03,
         P04,
-        P05
+        P05,
+        P06
     build-depends: base
     default-language: Haskell2010
     build-depends:    base ^>=4.20.2.0
