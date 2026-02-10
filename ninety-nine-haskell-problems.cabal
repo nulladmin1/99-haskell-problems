@@ -86,7 +86,8 @@ library
     hs-source-dirs: src
     exposed-modules:
         P01,
-        P02
+        P02,
+        P03
     build-depends: base
     default-language: Haskell2010
     build-depends:    base ^>=4.20.2.0
