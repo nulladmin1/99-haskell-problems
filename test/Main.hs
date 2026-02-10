@@ -4,11 +4,12 @@ import P01
 import P02
 import P03
 import P04
+import P05
 import qualified System.Exit as Exit
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03, p04]
+tests = TestList [p01, p02, p03, p04, p05]
 
 main :: IO ()
 main = do
@@ -107,3 +108,20 @@ p04 =
             (3)
             (len ([1, 2, 3] :: [Int]))
       ]
+
+p05 :: Test
+p05 =
+  TestLabel
+  "P05"
+  $ TestList
+    [ TestCase $
+        assertEqual 
+          "rev []"
+          ([] :: [Int])
+          (rev ([] :: [Int])),
+      TestCase $
+        assertEqual
+          "rev [1, 2, 3]"
+          ([3, 2, 1] :: [Int])
+          (rev ([1, 2, 3] :: [Int]))
+    ]
