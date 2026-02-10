@@ -3,11 +3,12 @@ module Main (main) where
 import P01
 import P02
 import P03
+import P04
 import qualified System.Exit as Exit
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03]
+tests = TestList [p01, p02, p03, p04]
 
 main :: IO ()
 main = do
@@ -88,4 +89,21 @@ p03 =
             "elemAt [4, 7, 3, 6, 8] 4"
             (Just 6)
             (elemAt ([4, 7, 3, 6, 8] :: [Int]) 4)
+      ]
+
+p04 :: Test
+p04 =
+  TestLabel
+    "P04"
+    $ TestList
+      [ TestCase $
+          assertEqual 
+            "len []"
+            (0)
+            (len []),
+        TestCase $
+          assertEqual 
+            "len [1, 2, 3]"
+            (3)
+            (len ([1, 2, 3] :: [Int]))
       ]
