@@ -7,12 +7,13 @@ import P04Test
 import P05Test
 import P06Test
 import P07Test
+import P08Test
 import P09Test
 import P14Test
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03, p04, p05, p06, p07, p09, p14]
+tests = TestList [p01, p02, p03, p04, p05, p06, p07, p08, p09, p14]
 
 main :: IO ()
 main = do
