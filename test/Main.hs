@@ -9,7 +9,6 @@ import P06Test
 import P07Test
 import P09Test
 import P14Test
-import qualified System.Exit as Exit
 import Test.HUnit
 
 tests :: Test
@@ -17,6 +16,4 @@ tests = TestList [p01, p02, p03, p04, p05, p06, p07, p09, p14]
 
 main :: IO ()
 main = do
-  c <- runTestTT tests
-  if failures c > 0 then Exit.exitFailure else Exit.exitSuccess
-
+  runTestTTAndExit tests
