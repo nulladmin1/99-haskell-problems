@@ -79,7 +79,8 @@ test-suite ninety-nine-haskell-problems-test
         P16Test,
         P17Test,
         P31Test,
-        P32Test
+        P32Test,
+        P33Test
     
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -120,7 +121,8 @@ library
         P16,
         P17,
         P31,
-        P32
+        P32,
+        P33
     build-depends: base
     default-language: Haskell2010
     build-depends:    base ^>=4.20.2.0
