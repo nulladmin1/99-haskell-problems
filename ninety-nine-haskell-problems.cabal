@@ -84,7 +84,8 @@ test-suite ninety-nine-haskell-problems-test
         P34Test,
         P35Test,
         P36Test,
-        P37Test
+        P37Test,
+        P39Test
     
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -130,7 +131,8 @@ library
         P34,
         P35,
         P36,
-        P37
+        P37,
+        P39
     build-depends: base
     default-language: Haskell2010
     build-depends:    base ^>=4.20.2.0
