@@ -1,7 +1,7 @@
 module P04Test where
 
-import Test.HUnit
 import P04
+import Test.HUnit
 
 p04 :: Test
 p04 =
@@ -9,14 +9,13 @@ p04 =
     "P04"
     $ TestList
       [ TestCase $
-          assertEqual 
+          assertEqual
             "len []"
             (0)
             (len []),
         TestCase $
-          assertEqual 
+          assertEqual
             "len [1, 2, 3]"
             (3)
             (len ([1, 2, 3] :: [Int]))
       ]
-

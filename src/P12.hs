@@ -6,7 +6,7 @@ unencode :: [(Int, a)] -> [a]
 unencode [] = []
 unencode lst = concatMap (\(n, x) -> replicate n x) lst
 
-decodeModified :: Eq a => [ListItem a] -> [a]
+decodeModified :: (Eq a) => [ListItem a] -> [a]
 decodeModified = unencode . map helper
   where
     helper :: ListItem a -> (Int, a)

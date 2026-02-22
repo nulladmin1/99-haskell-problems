@@ -5,4 +5,4 @@ rev ls = rev' ls []
   where
     rev' :: [a] -> [a] -> [a]
     rev' [] ys = ys
-    rev' (x : xs) ys = rev' xs (x : ys) 
+    rev' (x : xs) ys = rev' xs (x : ys)

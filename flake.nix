@@ -29,6 +29,7 @@
           ++ (with haskellPackages; [
             haskell-language-server
             cabal-install
+            ormolu
           ]);
       };
     });

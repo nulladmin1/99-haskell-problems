@@ -1,8 +1,8 @@
 module P02Test where
 
-import Test.HUnit
 import P02
- 
+import Test.HUnit
+
 p02 :: Test
 p02 =
   TestLabel

@@ -1,7 +1,7 @@
 module P10 where
 
 import P04
-import P09 
+import P09
 
 encode :: (Eq a) => [a] -> [(Int, a)]
 encode [] = []
