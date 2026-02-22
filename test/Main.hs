@@ -19,10 +19,13 @@ import P31Test
 import P32Test
 import P33Test
 import P34Test
+import P35Test
+import P36Test
+import P37Test
 import Test.HUnit
 
 tests :: Test
-tests = TestList [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p14, p15, p16, p31, p32, p33, p34]
+tests = TestList [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p14, p15, p16, p31, p32, p33, p34, p35, p36, p37]
 
 main :: IO ()
 main = do
