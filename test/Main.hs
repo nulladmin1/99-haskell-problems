@@ -23,6 +23,8 @@ import P35Test
 import P36Test
 import P37Test
 import P39Test
+import P40Test
+import P41Test
 import Test.HUnit
 
 tests :: Test
@@ -50,7 +52,9 @@ tests =
       p35,
       p36,
       p37,
-      p39
+      p39,
+      p40,
+      p41
     ]
 
 main :: IO ()
